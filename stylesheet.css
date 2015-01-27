@@ -1,0 +1,49 @@
+.navbar-def {
+background-color: #315688;
+border-color: #e7e7e7;
+}
+.navbar2 {
+position: relative;
+min-height: 80px;
+}
+
+
+.navbar-bra {
+float: left;
+height: 80px;
+padding: 10px;
+    width: 13%;
+font-size: 14px;
+color:white;
+background-color: red;
+}
+
+.btn-default_n {
+color: #333;
+background-color: #315688;
+padding: 10px 15px;
+}
+
+.navbar_left2 {
+position: relative;
+background: #696358;  
+    height: 600px;
+	width: 13%;
+
+    float: left;
+	margin-bottom: 10px;
+
+<!-- Сделать относительные -->
+}
+
+.container-fluid {
+
+
+}
+
+.nava {
+padding-left: 0;
+margin-bottom: 0;
+list-style: none;
+}
+  
