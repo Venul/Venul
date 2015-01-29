@@ -50,8 +50,8 @@
 }
 
 .nav-pills-left>li>a {
-border-radius: 4px;
-margin:15px;
-text-transform: uppercase;
-color: #fff;
+    border-radius: 4px;
+    margin:15px;
+    text-transform: uppercase;
+    color: #fff;
 }
