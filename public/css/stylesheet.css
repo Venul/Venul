@@ -1,0 +1,57 @@
+.navbar-top {
+    background-color: #315688;
+    border-color: #e7e7e7;
+    position: relative;
+    min-height: 80px;
+}
+
+.navbar-pers {
+    float: left;
+    height: 80px;
+    padding: 10px;
+    width: 13%;
+    font-size: 14px;
+    color:white;
+    background-color: red;
+}
+
+.person .btn-default {
+    color: #333;
+    background-color: #315688;
+    padding: 10px 15px;
+    border: none;
+}
+
+.person .navbar_left {
+    background: #696358;  
+    height: 100%;
+    position: absolute;
+    width: 13%;
+}
+
+.about {
+    text-transform: uppercase;
+    margin-left:200px;
+    position: relative;
+}
+
+.menu {
+    position: relative;
+    margin-left:200px;   
+}
+
+.container-fluid {
+    position: relative;
+    margin-left:200px;
+}
+
+.for_about {
+    display: block;
+}
+
+.nav-pills-left>li>a {
+border-radius: 4px;
+margin:15px;
+text-transform: uppercase;
+color: #fff;
+}
