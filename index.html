@@ -10,20 +10,22 @@
     <title>Way2Study</title>
 
     <link href="public/css/bootstrap.min.css" rel="stylesheet">
-    <link href="public/css/stylesheet.css" rel="stylesheet"> 
+    <link href="public/css/stylesheet.css" rel="stylesheet">
 
 </head>
 <body>
     <div class="person">
         <nav class="navbar-top" role="navigation">
-            <div class="navbar-head">
-                <a class="navbar-pers" href="#">
+            <div class="navbar-pers">
+                <a class = "avatar" href ="#">
                     <img src="public/pic/nyasha.jpg" class="img-circle" width="50" height="50">
                     Няша Петровна
                 </a>
             </div>
+<!--Разместить по центру -->
 
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="navbar-collapse">
+<!--Нужен ли такой блок!? -->
                 <ul class="nav navbar-nav">
                     <li>
                         <button type="button" class="btn btn-default btn">
@@ -43,11 +45,12 @@
                     </li>
                 </ul>
 
-"лого"  <!--Залепить по центру -->
+                <div class="logo">"лого" </div> 
 
                 <form class="navbar-form navbar-right" role="search">
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Искать тут">
+                        <input type="text" class="control" placeholder="Искать тут">
+ <!--Изменить первоначальный цвет текста -->
                     </div>
 
                     <button type="button" class="btn btn-default btn">
@@ -68,14 +71,14 @@
         </div>
 
         <div class="about">
-            <ul class="">
+            <ul class="nav nav-tabs">
                 <li>
                     <a href="#">
                         <img src="public/pic/nyasha.jpg" class="img-circle" width="80" height="80">
                     </a>
                 </li>
                 <li>
-                    <a>Няша Петровна</a> Звезды
+                    <p>Няша Петровна Звезды</p>
                     <p>Преподаватель Отзывы</p>
                     <p>Экспа</p>
                 </li>
@@ -98,27 +101,36 @@
  
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-4">
-                    .col-md-4
+                <div class="col-xs-4">
+                    <div class="btn-group" role="group" aria-label="...">
+  <button type="button" class="btn btn-default">Законченные курсы</button>
+  <button type="button" class="btn btn-default">Курсы в процессе</button>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    .col-md-4
+                <div class="col-xs-4">
+                    <div class="btn-group" role="group" aria-label="...">
+  <button type="button" class="btn btn-default">ВОПРОСЫ</button>
+  <button type="button" class="btn btn-default">ОТВЕТЫ</button>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    .col-md-4
+                <div class="col-xs-4">
+                    <div class="btn-group" role="group" aria-label="...">
+  <button type="button" class="btn btn-default">ЭКЗАМЕНЫ В ПРОЦЕССЕ</button>
+  <button type="button" class="btn btn-default">ПРОЙДЕННЫЕ ЭКЗАМЕНЫ</button>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-xs-4">
                     .col-md-4
                 </div>
-                <div class="col-md-4">
+                <div class="col-xs-4">
                     .col-md-4
                 </div>
-                <div class="col-md-4">
+                <div class="col-xs-4">
                     .col-md-4
                 </div>
             </div>
