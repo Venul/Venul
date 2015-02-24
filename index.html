@@ -2,171 +2,224 @@
 <html lang="en">
 
 <head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
     <title>Way2Study</title>
 
-    <link href="public/css/bootstrap.min.css" rel="stylesheet">
-    <link href="public/css/stylesheet.css" rel="stylesheet">
-
+    <link href="public/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="public/css/stylesheet.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
 </head>
+    
 <body>
-    <div class="person">
-        <nav class="navbar-top" role="navigation">
-            <div class="navbar-pers">
-                <a class = "avatar" href ="#">
-                    <img src="public/pic/nyasha.jpg" class="img-circle" width="50" height="50">
-                    Няша Петровна
-                </a>
-            </div>
-<!--Разместить по центру -->
-
-            <div class="navbar-collapse">
-<!--Нужен ли такой блок!? -->
-                <ul class="nav navbar-nav">
-                    <li>
-                        <button type="button" class="btn btn-default btn">
-                            <span class="glyphicon glyphicon-user"></span>
-                        </button>
-                    </li>
-                    <li>
-                        <button type="button" class="btn btn-default btn">
-                            <span class="glyphicon glyphicon-comment"></span>
-                        </button>
-                    </li>
-                    <li>
-                        <button type="button" class="btn btn-default btn">
-                            <span class="glyphicon glyphicon-bell"></span>
-                            <span class="badge-top">2</span>
-                        </button>
-                    </li>
-                </ul>
-
-                <div class="logo">
-                    <img src="public/pic/N.jpg" width="50" height="50">
-                </div>
-
-                <form class="navbar-form navbar-right" role="search">
-                    <div class="form-group">
-                        <input type="text" class="control" placeholder="Искать тут">
- <!--Изменить первоначальный цвет текста -->
-                    </div>
-
-                    <button type="button" class="btn btn-default btn">
-                        <span class="glyphicon glyphicon-search"></span>
-                    </button>
-                </form>
-            </div>
-        </nav>
-
-        <div class = "navbar_left">
-            <ul class="nav nav-pills-left">
-                <li class="active"><a href="#"> 
-                    <span class="glyphicon-left glyphicon-refresh"></span>Новости
-                </a></li>
-                <li><a href="#">
-                    <span class="glyphicon-left glyphicon-list-alt"></span>Курсы
-                </a></li>
-                <li><a href="#">
-                    <span class="glyphicon-left glyphicon-time"></span>Экзамены
-                </a></li>
-                <li><a href="#">
-                    <span class="glyphicon-left glyphicon-question-sign"></span>Вопросы
-                </a></li>
-                <li><a href="#">
-                    <span class="glyphicon-left glyphicon-share"></span>RSS
-                </a></li>
-            </ul>
+    <div class="row">
+        <div class="col-xs-12 col-sm-2 red-menu">
+            <a href ="#">
+                <ul class="nav nav-tabs about-small">
+                <li><img src="public/images/nyasha.jpg" class="img-circle" width="50" height="50"/></li>
+                <li>Няша Петровна</li>
+            </ul> 
+            </a>   
         </div>
 
-        <div class="about_full">
-            <ul class="nav nav-tabs">
+        <div class="col-xs-12 col-sm-10 top-menu">
+            <ul class="nav navbar-nav top-btm">
                 <li>
-                    <a href="#">
-                        <img src="public/pic/nyasha.jpg" class="img-circle" width="100" height="100">
+                    <a class="btm" href="#">
+                        <span class="glyphicon glyphicon-user"></span>
                     </a>
                 </li>
-                <li class="about">
-                    <p>Няша Петровна Звезды</p>
-                    <p>Преподаватель Отзывы</p>
-                    <p>Экспа</p>
+                <li>
+                    <a class="btm" href="#">
+                        <span class="glyphicon glyphicon-comment"></span>
+                    </a>
+                </li>
+                <li>
+                    <a class="btm bell" href="#">
+                            <span class="glyphicon glyphicon-bell"></span>
+                            <span class="badge badge-top">2</span>                        
+                    </a>
+                </li>
+            </ul>
+
+            <div class="logo top-btm">
+                <img src="public/images/logo.jpg" width="50" height="50"/>
+            </div>
+
+            <form class="navbar-form navbar-right top-btm" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control search" placeholder="Искать тут">
+
+                </div>
+                    <a class="btm" href="#">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </a>
+            </form>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-2 side-menu">
+            <ul class="nav left-link">
+                <li class="active"> 
+                    <a href="#"> 
+                        <span class="glyphicon glyphicon-refresh"></span>
+                        Новости
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="glyphicon glyphicon-list-alt"></span>
+                        Курсы
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="glyphicon glyphicon-time"></span>
+                        Экзамены
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="glyphicon glyphicon-question-sign"></span>
+                        Вопросы
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="glyphicon glyphicon-share"></span>
+                        RSS
+                    </a>
                 </li>
             </ul>
         </div>
 
-        <div class="menu">
-            <ul class="nav nav-pills">
-                <li class="active"><a href="#">Главная</a></li>
-                <li><a href="#">Профиль</a></li>
-                <li><a href="#">Сообщение</a></li>
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">Профиль</a></li>
-                <li><a href="#">Сообщение</a></li>
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">Профиль</a></li>
-                <li><a href="#">Сообщение</a></li>
-            </ul>
-        </div>
- 
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xs-4">
-                    <div class="btn-group" role="group" aria-label="...">
-  <button type="button" class="btn btn-default">Законченные курсы</button>
-  <button type="button" class="btn btn-default">Курсы в процессе</button>
+        <div class="col-xs-12 col-sm-10 content">
+            <ul class="nav nav-tabs">
+                <li>
+                    <a class="person-img" href="#">
+                        <img src="public/images/nyasha.jpg" class="img-circle" width="100" height="100"/>
+                    </a>
+                </li>
+                <li>
+                    <h4><a class="person-name" href="#">Няша Петровна</a></h4>
+                    <p>
+                        <b>
+                            <font color="#9d9999">Преподавател</font> 
+                            <a href="#">Отзывы</a>
+                        </b>
+                    </p>
+                    <p class="exp">
+                        <font color = "#a8a3a3">
+                        <i class="fa fa-cogs"></i>
+                        8,235 exp
+                        </font>
+                    </p>
+                </li>
+                <li>
+                    <div class="rating"> 
+                        <span>☆</span>
+                        <span>☆</span>
+                        <span>☆</span>
+                        <span>☆</span>
+                        <span>☆</span>
                     </div>
-                </div>
-                <div class="col-xs-4">
-                    <div class="btn-group" role="group" aria-label="...">
-  <button type="button" class="btn btn-default">ВОПРОСЫ</button>
-  <button type="button" class="btn btn-default">ОТВЕТЫ</button>
-                    </div>
-                </div>
-                <div class="col-xs-4">
-                    <div class="btn-group" role="group" aria-label="...">
-  <button type="button" class="btn btn-default">ЭКЗАМЕНЫ В ПРОЦЕССЕ</button>
-  <button type="button" class="btn btn-default">ПРОЙДЕННЫЕ ЭКЗАМЕНЫ</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+                </li>
 
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xs-4">
-                    <ul class="list-group">
-  <li class="list-group-item">Cras justo odio</li>
-  <li class="list-group-item">Dapibus ac facilisis in</li>
-  <li class="list-group-item">Morbi leo risus</li>
-  <li class="list-group-item">Porta ac consectetur ac</li>
-  <li class="list-group-item">Vestibulum at eros</li>
-</ul>
+                <div class="botom-exit">
+                    <a href="#">
+                        <i class="fa fa-pencil" data-toggle="tooltip" data-placement="top" title="Комментарии"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-sign-out"data-toggle="tooltip" data-placement="top" title="Выход"> </i>
+                    </a>
                 </div>
-                <div class="col-xs-4">
-                    <ul class="list-group">
-  <li class="list-group-item">Cras justo odio</li>
-  <li class="list-group-item">Dapibus ac facilisis in</li>
-  <li class="list-group-item">Morbi leo risus</li>
-  <li class="list-group-item">Porta ac consectetur ac</li>
-  <li class="list-group-item">Vestibulum at eros</li>
-</ul>
-                </div>
-                <div class="col-xs-4">
-                    <ul class="list-group">
-  <li class="list-group-item">Cras justo odio</li>
-  <li class="list-group-item">Dapibus ac facilisis in</li>
-  <li class="list-group-item">Morbi leo risus</li>
-  <li class="list-group-item">Porta ac consectetur ac</li>
-  <li class="list-group-item">Vestibulum at eros</li>
-</ul>
+            </ul>
+
+            <ul class="nav nav-pills content-menu">
+                <li class="active"><a href="#">Знания</a></li>
+                <li><a href="#">Курс</a></li>
+                <li><a href="#">Экзамен</a></li>
+                <li><a href="#">Вопросы</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Активность</a></li>
+                <li><a href="#">Друзья</a></li>
+            </ul>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-4 first">
+                        <ul class= "nav nav-tabs numbers">
+                            <li><h2>12</h2>
+                                <p> Законченные курсы</p> 
+                            </li>
+                            <li><h2>3</h2>
+                                <p> Курсы в процессе</p>
+                            </li>
+                        </ul> 
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <a>Cras justo odio</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a>Dapibus ac facilisis in</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a>Morbi leo risus</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a>Porta ac consectetur ac</a>
+                            </li>
+                            <li class="list-group-item showall">Показать все</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xs-4 second">
+                        <ul class= "numbers">
+                            <li><h2>12</h2>
+                                <p> Законченные курсы</p> 
+                            </li>
+                            <li><h2>3</h2>
+                                <p> Курсы в процессе</p>
+                            </li>
+                        </ul>   
+                        <ul class="list-group">
+                            <li class="list-group-item"><a>Cras justo odio</a></li>                                 <li class="list-group-item"><a>Cras justo odio</a></li>
+                            <li class="list-group-item"><a>Dapibus ac facilisis in</a></li>
+                            <li class="list-group-item"><a>Morbi leo risus</a></li>
+                            <li class="list-group-item"><a>Porta ac consectetur ac</a></li>
+                            <li class="list-group-item showall">Показать все</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xs-4 third">
+    
+                        <ul class="list-group">
+                            <ul class= "nav nav-tabs">
+                            <li class="numbers"><h2>12</h2>
+                                <p> Законченные курсы</p> 
+                            </li>
+                            <li class="numbers disabled"><h2>3</h2>
+                                <p> Курсы в процессе</p>
+                            </li>
+                        </ul>   
+                            <li class="list-group-item"><a>Cras justo odio</a></li>
+                            <li class="list-group-item"><a>Dapibus ac facilisis in</a></li>
+                            <li class="list-group-item"><a>Morbi leo risus</a></li>
+                            <li class="list-group-item"><a>Porta ac consectetur ac</a></li>
+                            <li class="list-group-item showall">Показать все</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="public/js/bootstrap.min.js"></script>
+    <script src="public/js/script.js"></script>
+    
 </body>
 </html>

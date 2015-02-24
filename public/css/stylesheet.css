@@ -1,128 +1,312 @@
-.navbar-top {
-    background-color: #264269;
-    position: relative;
+.red-menu {
     min-height: 80px;
-}
-
-.navbar-pers {
-    float: left;
-    height: 80px;
-    padding: 5px;
-    width: 13%;
     background-color: #f54848;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.avatar{
-    margin-top: 12px;
-    font-size: 14px;
-    color:white;
-}
-
-.navbar-nav {
-    padding-top:20px;
-}
-
-.logo {
-    margin-left:50%;
-    margin-right:50%;
-}
-
-.person .btn-default {
-    color: #fff;
-    background-color: #264269;
-    padding: 10px 15px;
-    border: none;
-}
-
-.person .navbar_left {
-    background: #89929a;
-    height: 100%;
-    position: absolute;
-    width: 13%;
-    
-}
-
-.about_full {
+.about-small {
+    font-size: 12px;
+    color: white;
     text-transform: uppercase;
-    margin-left:180px;
-    position: relative;
+    font-family: Verdana;
+    text-align: justify;
+/* todo    Сделать центрирование когда длинное имя и фамилия*/
 }
 
-.menu {
-    position: relative;
-    margin-left:180px;
+.about-small:hover,
+.about-small:focus,
+.about-small:active {
+    color: blue;
+    text-decoration: none;
 }
-
-.about{
-padding-top: 17px;
-
-}
-
-.control {
-    display: block;
-    width: 100%;
-    height: 34px;
-    padding: 6px 12px;
-    font-size: 14px;
-    line-height: 1.42857143;
-    color: #fff;
+/****************************************/
+.top-menu {
     background-color: #264269;
-    background-image: none;
-    border: 1px solid rgba(250, 250, 250, 0);
-    border-radius: 4px;
-}
-
-.container-fluid {
     position: relative;
-    margin-left:200px;
+    height: 80px;
 }
 
-.for_about {
-    display: block;
+.top-btm {
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 80px;
+    border:none;
 }
 
-.nav-pills-left>li>a {
-    border-radius: 4 px;
-    margin:15px;
-    text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.46);
-    font-size: 15px;
-}
-
-.btn .badge-top {
-    position: relative;
-    top: -10px;
-    left:-8px;
-}
-.btn-default .badge-top {
-    color: #fff;
-    background-color: #264269;
-}
 .badge-top {
-    display: inline-block;
-    min-width: 10px;
+    position: relative;
+    top: -12px;
+    left: -6px;
+    color: #fff;
+    background-color: #264269;
     padding: 2px 4px;
     font-size: 9px;
-    font-weight: 700;
-    line-height: 1;
-    color: #fff;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: baseline;
-    background-color: #777;
-    border-radius: 10px;
     border: 1px solid #fff;
 }
 
-.glyphicon-left {
+.logo {
+    margin-left: 50%;
+    position: absolute;
+}
+
+.btm {
+    color: #fff;
+    background-color: #264269;
+    padding: 10px 15px;
+    border-color: transparent;
+    font-size: 16px;
+}
+
+.btm:hover,
+.badge-top:hover,
+.btm:focus,
+.btm:active,
+.btm.bell:hover{
+    color: gold;
+    background-color: #264269 !important; 
+    border-color: gold;
+/* todo  При наведении на колокол 2 не красит*/
+}
+
+.search {
+    color: #fff;
+    background-color: #264269;
+    border:none;
+    margin-right:5px; 
+}
+
+.form-control::-webkit-input-placeholder {
+    color: #FFFFFF;
+    opacity:1;
+}
+
+.form-control:-moz-placeholder { / Firefox 18- /
+    color: #FFFFFF;
+    opacity:1;
+}
+
+.form-control::-moz-placeholder { / Firefox 19+ /
+    color: #FFFFFF;
+    opacity:1;
+}
+
+.form-control:-ms-input-placeholder {
+    color: #FFFFFF;
+    opacity:1;
+}
+
+/****************************************/
+.side-menu {
+    background: #89929a;
     position: relative;
-    top: 1px;
+    height: 100vh;
+    padding-right: 0px;
+}
+
+.nav.left-link>li>a:hover,
+.nav.left-link>li>a:focus,
+.nav.left-link>li.active>a {
+    color: #6f7880;
+    font-weight: bold;
+    background-color: white; 
+}
+
+.left-link>li>a {
+    border: 4px;
+    margin: 15px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.31);
+    font-size: 15px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+ul.nav.left-link>li>a>span {
+    margin-left: 15px;
+    padding-right: 20px;
+    font-size: 20px;
+}
+
+/****************************************/
+.content {
+    padding-left: 0px;
+    position: relative;
+    height: 100vh;
+    padding-top: 10px;
+}
+
+.nav-tabs {
+    border-bottom: none;
+    position: relative;    
+    padding-left: 15px;
+}
+
+.person-img,
+.person-name,
+.person-img:hover,
+.person-name:hover {
+    text-decoration: none;
+    color: black;
+    background-color: white !important;
+    border-color:transparent !important; 
+}
+
+ul.nav.nav-tabs>li>h4 {
+    text-transform: uppercase;
+    color: black;
+    padding-top: 10px;
+    font-family: Trebuchet MS;
+}
+
+.exp i {
+    padding-right: 5px;   
+}
+
+.rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    padding-left: 10px;
+}
+
+.rating>span {
+    padding-top: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     display: inline-block;
-    font-family: 'Glyphicons Halflings';
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    padding-right: 10px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.rating>span:hover:before,
+.rating>span:hover ~ span:before {
+    content: "\2605";
+    position: absolute;
+    color: orange;
+}
+
+.botom-exit {
+    margin-top: 30px;
+    float: right;
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.botom-exit i{
+    color: gray;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid;
+}
+
+.botom-exit>a:hover,
+.botom-exit>a:focus{
+    text-decoration: none;
+}
+
+.botom-exit i:active,
+.botom-exit i:hover{
+    background-color: red;
+    color: white;
+}
+
+/*
+.tooltrip .span {
+    color: red;
+    background-color: #264269 !important;
+      border-top-color: red;
+}
+*/
+
+.content-menu {
+    padding-left: 15px;
+    text-transform: uppercase;
+    color: black;
+}
+
+.content-menu>li>a {
+    color: black;
+    margin-right: 15px;
+}
+
+.content-menu>li>a:hover,
+ul.nav.nav-pills.content-menu>li.active>a:hover{
+    color: red;
+    background-color: white;
+}
+
+.content-menu>li:active,
+.content-menu>li.active {
+    color: red;
+    background-color: white;
+    border-bottom-style: solid;
+    border-bottom-color: red;   
+}
+
+.nav.nav-pills.content-menu>li.active>a {
+    background-color: transparent ;
+    color:black;
+}
+
+.container-fluid {
+    margin-left: 0px;
+    background-color: rgba(210, 212, 232, 0.76);
+}
+
+.container-fluid a {
+    color: black;
+    text-decoration: none;
+}
+
+.first h2,
+.first p,
+.first ul>li>a:hover
+{
+    color: #e69411;
+}
+
+.second h2,
+.second p, 
+.second ul>li>a:hover {
+    color: #6610f0;
+}
+
+.third h2,
+.third p, 
+.third ul>li>a:hover {
+    color: #19ea71;
+}
+
+.numbers {
+    position: relative;
+    display: inline-block;    
+    background-color: #fff;
+    margin-top: 20px;
+    text-align: center;
+    background-color: white;
+/* todo Растянуть блок*/
+}
+
+.numbers>li{
+    position: relative;
+    border: 1px solid #000;
+    align-items: center;   
+}
+
+
+.showall {
+    font-weight: bold;
+    font-size: 12px;
+    text-align: right;
+    color: black !important;    
+}
+
+ul.list-group>li:active{
+    border-left-style: solid; 
+    border-left-color: #e69411;
+    border-left-width: thick;
 }
