@@ -12,6 +12,9 @@
     text-transform: uppercase;
     font-family: Verdana;
     text-align: justify;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 /* todo    Сделать центрирование когда длинное имя и фамилия*/
 }
 
@@ -21,7 +24,9 @@
     color: blue;
     text-decoration: none;
 }
+
 /****************************************/
+
 .top-menu {
     background-color: #264269;
     position: relative;
@@ -35,7 +40,7 @@
     justify-content: center;
     flex-direction: row;
     height: 80px;
-    border:none;
+    border: none;
 }
 
 .badge-top {
@@ -63,21 +68,21 @@
 }
 
 .btm:hover,
-.badge-top:hover,
 .btm:focus,
 .btm:active,
-.btm.bell:hover{
+a.bell:hover>span,
+a.bell:active>span,
+a.bell:focus>span {
     color: gold;
     background-color: #264269 !important; 
     border-color: gold;
-/* todo  При наведении на колокол 2 не красит*/
 }
 
 .search {
     color: #fff;
     background-color: #264269;
-    border:none;
-    margin-right:5px; 
+    border: none;
+    margin-right: 5px;
 }
 
 .form-control::-webkit-input-placeholder {
@@ -87,20 +92,21 @@
 
 .form-control:-moz-placeholder { / Firefox 18- /
     color: #FFFFFF;
-    opacity:1;
+    opacity :1;
 }
 
 .form-control::-moz-placeholder { / Firefox 19+ /
     color: #FFFFFF;
-    opacity:1;
+    opacity :1;
 }
 
 .form-control:-ms-input-placeholder {
     color: #FFFFFF;
-    opacity:1;
+    opacity :1;
 }
 
 /****************************************/
+
 .side-menu {
     background: #89929a;
     position: relative;
@@ -113,7 +119,7 @@
 .nav.left-link>li.active>a {
     color: #6f7880;
     font-weight: bold;
-    background-color: white; 
+    background-color: rgba(255, 255, 255, 0.4);
 }
 
 .left-link>li>a {
@@ -133,6 +139,7 @@ ul.nav.left-link>li>a>span {
 }
 
 /****************************************/
+
 .content {
     padding-left: 0px;
     position: relative;
@@ -142,7 +149,7 @@ ul.nav.left-link>li>a>span {
 
 .nav-tabs {
     border-bottom: none;
-    position: relative;    
+    position: relative;
     padding-left: 15px;
 }
 
@@ -164,7 +171,7 @@ ul.nav.nav-tabs>li>h4 {
 }
 
 .exp i {
-    padding-right: 5px;   
+    padding-right: 5px;
 }
 
 .rating {
@@ -214,13 +221,13 @@ ul.nav.nav-tabs>li>h4 {
     color: white;
 }
 
-/*
-.tooltrip .span {
-    color: red;
-    background-color: #264269 !important;
-      border-top-color: red;
+.tooltip-inner {
+  background-color: #264269;
 }
-*/
+
+.tooltip.top .tooltip-arrow {
+    border-top-color: #264269;
+}
 
 .content-menu {
     padding-left: 15px;
@@ -244,7 +251,7 @@ ul.nav.nav-pills.content-menu>li.active>a:hover{
     color: red;
     background-color: white;
     border-bottom-style: solid;
-    border-bottom-color: red;   
+    border-bottom-color: red;
 }
 
 .nav.nav-pills.content-menu>li.active>a {
@@ -254,7 +261,7 @@ ul.nav.nav-pills.content-menu>li.active>a:hover{
 
 .container-fluid {
     margin-left: 0px;
-    background-color: rgba(210, 212, 232, 0.76);
+    background-color: rgba(236, 237, 244, 0.76);
 }
 
 .container-fluid a {
@@ -262,51 +269,55 @@ ul.nav.nav-pills.content-menu>li.active>a:hover{
     text-decoration: none;
 }
 
-.first h2,
-.first p,
-.first ul>li>a:hover
-{
+.first,
+ul.first>li:hover {
     color: #e69411;
 }
 
-.second h2,
-.second p, 
+.second,
 .second ul>li>a:hover {
-    color: #6610f0;
+    color: #c057e6;
 }
 
-.third h2,
-.third p, 
+.third,
 .third ul>li>a:hover {
-    color: #19ea71;
+    color: #24aa5c;
 }
 
 .numbers {
-    position: relative;
-    display: inline-block;    
     background-color: #fff;
     margin-top: 20px;
+    padding: 0px;
+    margin-bottom: 0px;
+    border-bottom-color: white;
+    font-size: 12px;
+}
+
+.numbers>li {
+    display:inline-block;
     text-align: center;
-    background-color: white;
-/* todo Растянуть блок*/
+    margin-right: -5px;
+    width: 50%;
+    margin-bottom: 5px;
 }
 
-.numbers>li{
-    position: relative;
-    border: 1px solid #000;
-    align-items: center;   
+.num-top {
+    font-size: 35px;
+    margin-top: 10px;
+    font-weight: bold;
 }
-
 
 .showall {
     font-weight: bold;
     font-size: 12px;
     text-align: right;
-    color: black !important;    
+    color: black !important;
 }
 
-ul.list-group>li:active{
-    border-left-style: solid; 
+ul.list-group>li:active {
+    border-left-style: solid;
     border-left-color: #e69411;
     border-left-width: thick;
+    background-color: #f2f2f2;
 }
+
