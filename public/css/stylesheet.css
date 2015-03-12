@@ -1,21 +1,28 @@
 .red-menu {
     min-height: 80px;
     background-color: #f54848;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .about-small {
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
     font-size: 12px;
     color: white;
+    min-height: 80px;
     text-transform: uppercase;
     font-family: Verdana;
-    text-align: justify;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-/* todo    Сделать центрирование когда длинное имя и фамилия*/
+    margin-bottom: 0px;
+    
+/* todo   длинное имя и фамилия*/
+}
+
+.about-small>li {
+    display:inline-block;
+    margin-left: 10px;
 }
 
 .about-small:hover,
@@ -29,7 +36,6 @@
 
 .top-menu {
     background-color: #264269;
-    position: relative;
     height: 80px;
 }
 
@@ -47,7 +53,7 @@
     position: relative;
     top: -12px;
     left: -6px;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.81);
     background-color: #264269;
     padding: 2px 4px;
     font-size: 9px;
@@ -60,7 +66,7 @@
 }
 
 .btm {
-    color: #fff;
+    color: rgba(255, 255, 255, 0.81);
     background-color: #264269;
     padding: 10px 15px;
     border-color: transparent;
@@ -86,17 +92,17 @@ a.bell:focus>span {
 }
 
 .form-control::-webkit-input-placeholder {
-    color: #FFFFFF;
+    color: rgba(255, 255, 255, 0.81);
     opacity:1;
 }
 
 .form-control:-moz-placeholder { / Firefox 18- /
-    color: #FFFFFF;
+    color: rgba(255, 255, 255, 0.81);
     opacity :1;
 }
 
 .form-control::-moz-placeholder { / Firefox 19+ /
-    color: #FFFFFF;
+    color: rgba(255, 255, 255, 0.81);
     opacity :1;
 }
 
@@ -108,7 +114,7 @@ a.bell:focus>span {
 /****************************************/
 
 .side-menu {
-    background: #89929a;
+    background: #a1a9b1;
     position: relative;
     height: 100vh;
     padding-right: 0px;
@@ -142,14 +148,12 @@ ul.nav.left-link>li>a>span {
 
 .content {
     padding-left: 0px;
-    position: relative;
     height: 100vh;
     padding-top: 10px;
 }
 
 .nav-tabs {
     border-bottom: none;
-    position: relative;
     padding-left: 15px;
 }
 
@@ -163,10 +167,9 @@ ul.nav.left-link>li>a>span {
     border-color:transparent !important; 
 }
 
-ul.nav.nav-tabs>li>h4 {
+ul.nav.nav-tabs>li>h3 {
     text-transform: uppercase;
     color: black;
-    padding-top: 10px;
     font-family: Trebuchet MS;
 }
 
@@ -177,7 +180,7 @@ ul.nav.nav-tabs>li>h4 {
 .rating {
     unicode-bidi: bidi-override;
     direction: rtl;
-    padding-left: 10px;
+    padding-left: 20px;
 }
 
 .rating>span {
@@ -187,6 +190,7 @@ ul.nav.nav-tabs>li>h4 {
     display: inline-block;
     font-weight: 500;
     font-size: 18px;
+    color: black;
 }
 
 .rating>span:hover:before,
@@ -233,6 +237,7 @@ ul.nav.nav-tabs>li>h4 {
     padding-left: 15px;
     text-transform: uppercase;
     color: black;
+    font-weight: bold;
 }
 
 .content-menu>li>a {
@@ -270,18 +275,21 @@ ul.nav.nav-pills.content-menu>li.active>a:hover{
 }
 
 .first,
-ul.first>li:hover {
+.first .list-group>li:hover {
     color: #e69411;
+    border-left-color: #e69411;
 }
 
 .second,
-.second ul>li>a:hover {
+.second .list-group>li:hover {
     color: #c057e6;
+    border-left-color: #c057e6;
 }
 
 .third,
-.third ul>li>a:hover {
+.third .list-group>li:hover {
     color: #24aa5c;
+    border-left-color:#24aa5c;
 }
 
 .numbers {
@@ -289,8 +297,8 @@ ul.first>li:hover {
     margin-top: 20px;
     padding: 0px;
     margin-bottom: 0px;
-    border-bottom-color: white;
     font-size: 12px;
+    border: 1px solid #ddd;
 }
 
 .numbers>li {
@@ -311,13 +319,42 @@ ul.first>li:hover {
     font-weight: bold;
     font-size: 12px;
     text-align: right;
-    color: black !important;
+    color: black;
+    border-left-color:transparent !important;
 }
 
-ul.list-group>li:active {
+.list-group>li.hover,
+.list-group>li:hover {
     border-left-style: solid;
-    border-left-color: #e69411;
     border-left-width: thick;
     background-color: #f2f2f2;
 }
 
+.list-group-item {
+    cursor: pointer;
+    padding: 12px 20px;
+}
+
+.list-group-item a{
+    color: rgba(79, 83, 85, 0.79);
+}
+
+
+.second-num {
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.second-txt {
+    left: 15%;
+    position: relative;
+}
+
+.green-block>li {
+    display:inline-table;
+}
+
+.green-block {
+    padding: 0px;
+}
